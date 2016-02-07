@@ -1,0 +1,20 @@
+{% if results %}
+  <table border="1">
+    <tr>
+      <td>host</td>
+      <td>title</td>
+      <td>description</td>
+      <td>provider</td>
+    </tr>
+    {% for result in results %}
+      <tr>
+        <td>{{ result.host }}</td>
+        <td>{{ result.title }}</td>
+        <td>{{ result.description }}</td>
+        <td>{{ result.provider }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+{% else %}
+    <p>No results are available.</p>
+{% endif %}
