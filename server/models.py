@@ -4,9 +4,9 @@ import urllib2, re
 
 from django.db import models
 
-from tagging.fields import TagField
-from tagging.models import Tag
-from tagging.registry import register
+# from tagging.fields import TagField
+# from tagging.models import Tag
+# from tagging.registry import register
 
 from yaml import safe_load
 
